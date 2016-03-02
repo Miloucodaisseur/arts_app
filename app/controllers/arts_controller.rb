@@ -27,7 +27,7 @@ class ArtsController < ApplicationController
       private
 
       def art_params
-        params.require(:art).permit(:name, :description, :origin, :date_origin)
+        params.require(:art).permit(:name, :description, :origin, :review)
       end
 
 

@@ -1,4 +1,7 @@
   Rails.application.routes.draw do
+
+    root 'info#index'
+    
   resources :arts, only: [:index, :create, :show] do
     resources :reviews, only: [:index, :create]
   end
@@ -6,7 +9,7 @@
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-root 'info#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
