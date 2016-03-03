@@ -19,15 +19,14 @@ class ArtsController < ApplicationController
   def show
       art = Art.find(params[:id])
 
-      if (art.reviews.average(:rating) === nil)
-        average_rating = 0
-      else
-        average_rating = art.reviews.average(:rating).round
-      end
-      
+      # if (art.reviews.average(:rating) === nil)
+      #   average_rating = 0
+      # else
+      #   average_rating = art.reviews.average(:rating).round
+      # end
+
       render json: {
       art: art
-      average_rating: average_rating
     }
   end
 
