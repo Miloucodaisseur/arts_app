@@ -1,9 +1,12 @@
 class ArtsController < ApplicationController
   def index
-     render json: {
-       arts: Art.order(:name)
-     }
+       arts = Art.order(:name)
+
+       render json: {
+         arts: arts.as_json({:include => :reviews})
+       }
    end
+
 
    def create
         if art = Art.create(art_params)
