@@ -2,7 +2,7 @@ Art.create([
   {
     name: "Whiteside Mountain",
     description: "lorem ipsum dolor sit amet",
-    origin: "United States"  
+    origin: "United States"
   },
   {
     name: "Roma Architecture",
@@ -20,3 +20,11 @@ Art.create([
     origin: "United States"
   }
   ])
+
+  Review.create([
+    {
+      name: "Milou",
+      description: "Great painting",
+      rating: 5
+    }
+    ])
