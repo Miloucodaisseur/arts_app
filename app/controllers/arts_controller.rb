@@ -22,6 +22,10 @@ class ArtsController < ApplicationController
   def show
       art = Art.find(params[:id])
 
+      reviews = art.reviews
+
+
+
       # if (art.reviews.average(:rating) === nil)
       #   average_rating = 0
       # else
@@ -30,6 +34,7 @@ class ArtsController < ApplicationController
 
       render json: {
       art: art
+      reviews: reviews
     }
   end
 
