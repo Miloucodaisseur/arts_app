@@ -26,6 +26,6 @@ Art.create([
       name: "Milou",
       description: "Great painting",
       rating: 5,
-      arts_id: 4
+      art_id: 4
     }
     ])
