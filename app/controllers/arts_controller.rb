@@ -33,7 +33,7 @@ class ArtsController < ApplicationController
       # end
 
       render json: {
-      art: art
+      art: art,
       reviews: reviews
     }
   end
